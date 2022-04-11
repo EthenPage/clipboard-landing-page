@@ -1,13 +1,169 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+*,
+:after,
+:before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /* Primary color */
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+
+  /* Neutral color */
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background: url(./Assets/images/bg-header-mobile.png) no-repeat;
+  background-size: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.main{
+  max-width: 375px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* typo */
+h1,
+h2,
+h3 {
+  color: var(--DarkGrayishBlue);
+  padding: 0 15px;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 3.25rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: 0 1em;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+p {
+  color: var(--GrayishBlue);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  padding: 0 15px;
+  margin-bottom: 4em;
+}
+
+.header__img {
+  margin-top: 3em;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin-bottom: 3.5em;
+}
+
+li{
+  list-style: none;
+}
+
+.footer a{
+  text-decoration: none;
+  color: var(--DarkGrayishBlue);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+/******* override *******/
+.resize {
+  width: fit-content;
+  margin: 0 auto 2em;
+}
+
+.agents .resize {
+  margin-bottom: 5em;
+}
+
+.footer img{
+  width: 15%;
+  margin-bottom: 4em;
+}
+
+/* buttons */
+.buttons {
+  width: 90%;
+  margin: 0 auto 4em;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: block;
+  padding: 1em 0;
+  letter-spacing: 1px;
+  border-radius: 2em;
+  margin-bottom: 1.5em;
+}
+
+.buttons a:first-child {
+  background-color: var(--StrongCyan);
+}
+
+.buttons a:last-child {
+  background-color: var(--LightBlue);
+}
+
+/* header section */
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* others margin */
+.access,
+.supercharge,
+.agents,
+.action {
+  margin-bottom: 7em;
+}
+
+/* footer */
+.footer{
+  background-color: rgb(230, 230, 230);
+  padding: 4em 0 1em;
+}
+
+.content{
+  margin-bottom: 4em;
+}
+
+.social a{
+  display: inline-block;
+  width: 15%;
+}
+
+.social img{
+  width: auto;
+  margin-bottom: 0;
 }

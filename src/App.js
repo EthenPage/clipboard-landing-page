@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Hero from "./Page/Hero";
+import Snippets from "./Page/Snippets";
+import Access from "./Page/Access";
+import Supercharge from "./Page/Supercharge";
+import Agents from "./Page/Agents";
+import Action from "./Page/Action";
+import Footer from "./Page/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main className="main">
+        <Hero />
+        <Snippets />
+        <Access />
+        <Supercharge />
+        <Agents />
+        <Action />
+      </main>
+      <footer className="footer">
+        <Footer />
+      </footer>
+    </>
   );
 }
 
