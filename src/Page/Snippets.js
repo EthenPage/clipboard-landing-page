@@ -7,7 +7,7 @@ function Snippets() {
       <section className="snippets">
         <div className="snippets__head">
           <h2>Keep track of your snippets</h2>
-          <p>
+          <p className="desktop__text">
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.

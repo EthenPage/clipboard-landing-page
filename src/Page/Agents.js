@@ -5,7 +5,7 @@ function Agents() {
   return (
     <>
       <section className="agents">
-        <div>
+        <div className="agents__items">
           <img className="resize" src={IMAGES.google} alt="google" />
           <img className="resize" src={IMAGES.ibm} alt="imb" />
           <img className="resize" src={IMAGES.microsoft} alt="microsoft" />

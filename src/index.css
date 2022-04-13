@@ -42,7 +42,7 @@ h2,
 h3 {
   color: var(--DarkGrayishBlue);
   padding: 0 15px;
-  margin-bottom: 1em;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -64,7 +64,7 @@ p {
   line-height: 1.6;
   letter-spacing: 0.4px;
   padding: 0 15px;
-  margin-bottom: 4em;
+  margin-bottom: 40px;
 }
 
 .header__img {
@@ -150,7 +150,7 @@ li{
 
 /* footer */
 .footer{
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(243, 242, 248);
   padding: 4em 0 1em;
 }
 
@@ -166,4 +166,90 @@ li{
 .social img{
   width: auto;
   margin-bottom: 0;
+}
+
+@media screen and (min-width:1024px) {
+  html{
+    font-size: 80%;
+  }
+
+  body{
+    background: url(./Assets/images/bg-header-desktop.png) no-repeat;
+  }
+
+  .main{
+    max-width: 1440px;
+    width: 90%;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .buttons a{
+    width: 25%;
+  }
+
+  .snippets__body{
+    display: flex;
+    gap: 5%;
+  }
+
+  .snippets__body__text{
+    text-align: left;
+  }
+
+  .supercharge_items, .agents__items{
+    display: flex;
+    align-items: baseline;
+  }
+
+  .agents__items img{
+    height: 100%;
+  }
+
+  /* footer */
+  .footer-container{
+    display: flex;
+    
+  }
+
+  .footer-img{
+    width: 25%;
+    flex: 1;
+  }
+
+  .footer img{
+    margin-bottom: 0;
+  }
+
+  .content{
+    margin-bottom: 0;
+    flex: 2;
+  }
+
+  .content ul{
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3em;
+  }
+
+  .content li:nth-of-type(1){order: 1;}
+  .content li:nth-of-type(2){order: 4;}
+  .content li:nth-of-type(3){order: 2;}
+  .content li:nth-of-type(4){order: 5;}
+  .content li:nth-of-type(5){order: 3;}
+
+  .social{
+    flex: 1;
+  }
+
+  .desktop__text, .access, .action__head{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
